@@ -54,3 +54,14 @@ Ils s'appellent *incrémentation* et *décrémentation*, ils servent à augmente
 ## Les Boucles
 
 Une boucle, c'est une écriture qui permet de répéter l'éxécution d'un *bloc* de code. Il y en a de deux sortes, le ```while``` et le ```for``` (appelées "Tant Que" et "Pour" en Français).
+
+### ```while```
+
+```javascript
+a = 1
+c = 0
+while (a < 16){ // Tant que a est plus petit que 16
+  a *= 2        // Multiplier a par deux
+  c ++          // Augmenter c de un
+}
+```
