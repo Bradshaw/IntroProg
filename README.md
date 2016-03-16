@@ -27,7 +27,7 @@ Il existe d'autres opérateurs pour certains cas particuliers:
 
 ### ```+= -= *= /=```
 
-Ces opérateurs sont ce qu'on appelle du *sucre syntactique*, c'est à dire qu'ils sont équivalents à une autre écriture.
+Ces opérateurs sont ce qu'on appelle du *sucre syntaxique*, c'est à dire qu'ils sont équivalents à une autre écriture.
 ```javascript
 a += 5
 ```
@@ -39,7 +39,7 @@ L'intérêt est de simplifier l'écriture lorsqu'on souhaite modifier la valeur 
 
 ### ```++ --```
 
-Ces opérateurs sont aussi du *sucre syntactique*:
+Ces opérateurs sont aussi du *sucre syntaxique*:
 ```javascript
 a++
 ```
