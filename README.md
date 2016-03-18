@@ -2,9 +2,6 @@
 Cours d'introduction à la programmation
 
 
-# Cours 1
-Au premier cours, nous avons vu les notions de *variable*, d'*affectation* et de *boucle*.
-
 ## Variables & Affectation
 
 Une *variable*, est simplement une sorte d'étiquette pour des valeurs qu'on souhaite conserver.   
@@ -17,7 +14,7 @@ A partir de cette instruction, ```maValeur``` contient 5, on peut aussi dire qu'
 
 On peut donc utiliser ```maValeur```dans un calcul en tant que nombre:   
 ```javascript
-maValeur = 5
+var maValeur = 5
 alert( maValeur + 10 ) // Affiche "15" dans une fenêtre
 ```
 
@@ -57,11 +54,27 @@ Une boucle, c'est une écriture qui permet de répéter l'éxécution d'un *bloc
 
 ### ```while```
 
+La boucle *while* continue tant que sa *condition* est *vraie*. Pour écrire une boucle *while* valide, il faut donner une condition qui cesse d'être vraie lors d'un tour de boucle.   
+   
+Dans l'exemple suivant, la condition est ```a < 16```. On voit que ```a``` est initialisée à ```1```, puis est multipliée par ```2``` à chaque tour, et donc sera égale à ```16``` après quatre tours de boucle.   
+
 ```javascript
-a = 1
-c = 0
+var a = 1
+var c = 0
 while (a < 16){ // Tant que a est plus petit que 16
   a *= 2        // Multiplier a par deux
   c ++          // Augmenter c de un
+}
+```
+
+### ```for```
+
+La boucle *for* a trois paramètres, l'*initialisation*, appellée avant de commencer, la *condition* vérifiée avant chaque tour de boucle (comme pour le *while*), et l'*incrémentation*, appellée après chaque tour de boucle.   
+   
+Dans l'exemple suivant, une boucle *for* utilise une variable appellée ```i```, pour effectuer ```5``` tours, affichant à chaque fois la valeur de ```i``` dans la console.
+
+```javascript
+for (var i = 0; i < 5; i++){
+	console.log(i)	
 }
 ```
