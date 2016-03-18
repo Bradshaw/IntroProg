@@ -61,9 +61,9 @@ Dans l'exemple suivant, la condition est ```a < 16```. On voit que ```a``` est i
 ```javascript
 var a = 1
 var c = 0
-while (a < 16){ // Tant que a est plus petit que 16
-  a *= 2        // Multiplier a par deux
-  c ++          // Augmenter c de un
+while (a < 16){		// Tant que a est plus petit que 16
+	console.log(a)	// Afficher la valeur de a dans la console
+	a *= 2			// Multiplier a par deux
 }
 ```
 
@@ -74,7 +74,7 @@ La boucle *for* a trois paramètres, l'*initialisation*, appellée avant de comm
 Dans l'exemple suivant, une boucle *for* utilise une variable appellée ```i```, pour effectuer ```5``` tours, affichant à chaque fois la valeur de ```i``` dans la console.
 
 ```javascript
-for (var i = 0; i < 5; i++){
-	console.log(i)	
+for (var i = 0; i < 5; i++){	// Pour i allant de 0 à 4 (5 exclu)
+	console.log(i)				// Afficher la valeur de i dans la console
 }
 ```
