@@ -1,5 +1,4 @@
-# IntroProg
-Cours d'introduction à la programmation
+# Notions de programmation
 
 
 ## Variables & Affectation
@@ -167,7 +166,65 @@ console.log(truc.nom)
 console.log(truc.nom)
 ```
 
+# Turtle
 
+Pour vous exercer, on vous propose le *Turtle*. Un exercice classique d'introduction à la programmation.   
+Vous pouvez obtenir les sources d'un Turtle en JavaScript qui fonctionne dans le navigateur en cliquant [ici](http://is.gd/sigturtle).   
+
+## Les fonctions du Turtle
+
+### ```penUp()``` et ```penDown()```
+
+Ces fonctions ne prennent pas de paramètre, et demandent respectivement à la tortue de lever ou de poser son style. Lorsque le stylo est posé, la tortue laissera une trace en se déplaçant.
+
+### ```penColor()```
+
+Cette fonction prend un paramètre sous forme d'une chaîne de caractères, et change la couleur du stylo de la tortue:   
+```javascript
+penColor("red")		// Le stylo devient rouge
+penColor("#FF8800") // Le stylo devient orange
+```
+
+### ```turn()```
+
+Cette fonction prend un angle en degrés, et fait tourner la tortue sur elle-même:   
+```javascript
+turn(90)			// Tourne vers la droite
+```
+
+### ```move()```
+
+Cette fonction prend une distance en pixels, et fait avancer la tortue de cette distance (si le stylo est posé, cela laissera un trait):
+```javascript
+move(100)			// Avance de 100 pixels
+```
+
+## Exemple utilisant toutes les fonctionalités de programmation
+
+```javascript
+// Crée un tableau de trois objets que nous interpréterons comme déscriptions de polygone
+var myPolygons = [
+  {distance: 30, sides: 3, color: "blue"},
+  {distance: 30, sides: 6, color: "green"},
+  {distance: 30, sides: 4, color: "red"}
+]
+
+// Une fonction qui déssine un objet polygone passé en paramètre
+function drawPoly(p) {
+  penColor(p.color)						// Change la couleur du pinceau
+  for (var i = 0; i < p.sides; i++) {	// Pour chaque coté ...
+    move(p.distance)					// ... avancer de la distance demandée ...
+    turn(360/p.sides)					// ... et tourner d'un angle permettant un tour complet au final.
+  }
+}
+
+// Boucle qui déssine les polygones qui ont plus de trois faces
+for (var i = 0; i < myPolygons.length; i++) {	// Pour chaque polygone ...
+  if (myPolygons[i].sides>3){					// ... si le polygone a plus de trois faces ...
+    drawPoly(myPolygons[i])						// ... déssine le polygone.
+  }
+}
+```
 
 
 
