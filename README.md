@@ -111,7 +111,7 @@ On peut même utiliser ces appels comme paramètre d'une autre fonction:
 ```javascript
 // Récupère les résultats des deux appels à max(a,b), et passe les résultats en paramètre à somme(a, b)
 var myVariable = somme( max(13,10), max(40,32) )
-
+```
 
 ## Les Tableaux
 
